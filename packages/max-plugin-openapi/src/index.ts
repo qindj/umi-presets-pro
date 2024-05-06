@@ -25,6 +25,7 @@ export default (api: IApi) => {
             customFunctionName: joi.function(),
             customClassName: joi.function(),
           }),
+          enumStyle: joi.string(),
         });
         return joi.alternatives(joi.array().items(itemSchema), itemSchema);
       },
@@ -86,12 +87,11 @@ export default (api: IApi) => {
               onChange={(e) => setValue(e.target.value)}
             >
               ${arrayConfig
-                .map((item) => {
-                  return `<option value="${item.projectName || 'openapi'}">${
-                    item.projectName || 'openapi'
-                  }</option>`;
-                })
-                .join('\n')}
+          .map((item) => {
+            return `<option value="${item.projectName || 'openapi'}">${item.projectName || 'openapi'
+              }</option>`;
+          })
+          .join('\n')}
             </select>
             <div id="swagger-ui" />
           </div>
