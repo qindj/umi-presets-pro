@@ -34,6 +34,6 @@
     "chenxiaocong <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"
   ],
   "overrides": {
-    "@umijs/max-plugin-openapi": "git+https://github.com/qindj/umi-presets-pro#path:./packages/max-plugin-openapi",
+    "@umijs/max-plugin-openapi": "git+https://github.com/qindj/umi-presets-pro#path:./packages/max-plugin-openapi"
   }
 }
